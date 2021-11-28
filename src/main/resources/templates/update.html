@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>修改员工</title>
+</head>
+<body>
+
+<h1>修改员工</h1>
+
+<form action="update">
+    <input type="hidden" name="studentid"  th:value="${student.studentid}">
+    姓名 <input type="text" name="studentname" th:value="${student.studentname}"> <br>
+    年龄 <input type="text" name="studentage" th:value="${student.studentage}"> <br>
+    性别 <input type="text" name="studentgender" th:value="${student.studentgender}"> <br>
+    <input type="submit"> <br>
+
+</form>
+
+</body>
+</html>
